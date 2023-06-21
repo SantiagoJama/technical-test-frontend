@@ -1,0 +1,45 @@
+
+.login-form__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.submit-button__container{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+    .button-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* border: 2px solid red; */
+        width: 50%;
+    }
+.form-container{
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    border-radius: 2%;
+}
+.sign-up-legend{
+    color: #107BF4;
+    font-weight: 700;
+}
+.label-information{
+    color: black;
+    font-weight: 700;
+}
+
+.cancel-button, .sign-up-button{
+    background-color: #107BF4;
+    color: white;
+    padding: .6em;
+    border-radius: 3%;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}

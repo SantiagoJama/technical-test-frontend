@@ -1,0 +1,16 @@
+
+
+.main-navbar-container{
+    background-color: #107BF4 !important; 
+    color : rgb(255, 255, 255);
+}
+
+ul>li>a{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+ul>li>a:hover{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}

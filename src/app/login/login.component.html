@@ -1,0 +1,32 @@
+<app-header [menuLinks]="[{nameLink : 'Registrese', nameRoute : 'sign-up'}]"></app-header>
+<div class="container-fluid" style="background-color: #DFF1F1;">
+    <div class="row">
+        <div class="col-12">
+            <div style="height: 86.6vh;" class="login-form__container">
+                <div class="form-container" style="width: 30%; border-left: 25px solid #107BF4;">
+                    <h3 class="text-center sign-in-message">Inicie sesión</h3>
+                <form (ngSubmit)="onSubmit(loginForm);" #loginForm="ngForm">
+                    <div class="form-group">
+                        <label for="username" class="label-information">Ingrese su usuario:</label> <br>
+                        <input type="text" class="form-control" name="username" id="username" ngModel #username="ngModel" required="true" placeholder="santiagoj">
+                        <span [hidden]="username.valid || username.pristine" class="text-danger">El usuario es requerido</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="userpass"  class="label-information">Ingrese su contraseña:</label> <br>
+                        <input type="password" class="form-control" name="userpass" id="userpass" ngModel #userpass="ngModel" required="true" placeholder="*********">
+                        <span [hidden]="userpass.valid || userpass.pristine" class="text-danger">La contaseña es requerida</span>
+                    </div>
+                    <div class="submit-button__container form-group">
+                        <div class="button-items">
+                            <button type="submit" [disabled]="loginForm.invalid" class="sign-in-button"> Ingresar </button>
+                            <button type="button" class="sign-up-button">Olvidé la contraseña</button>
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+
