@@ -1,4 +1,5 @@
 export interface UserLoginCredentialsDTO{
-    userName : string,
-    userPassword : string
+    username : string,
+    password : string,
+    passwordconfi ? : string
 }

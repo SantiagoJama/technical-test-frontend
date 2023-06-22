@@ -28,4 +28,8 @@ export class LocalStorageService {
       const userLoogedData : any = localStorage.getItem(this.USER_LOGGED_NAME);
       return <UserLoggedDTO> JSON.parse(userLoogedData );
     }
+
+   
+
+
 }

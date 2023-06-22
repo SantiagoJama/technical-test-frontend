@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  border: 2px solid green;
+
 }
    .carousel-item {
     height: 300px;
@@ -20,6 +20,15 @@
     color: #555;
   }
   .carousel-content{
-    border: 2px solid red;
+    height: 30em;
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .sliders-container{
+    box-shadow: 1px 3px 24px 0px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 1px 3px 24px 0px rgba(0,0,0,0.53);
+    -moz-box-shadow: 1px 3px 24px 0px rgba(0,0,0,0.53);
+    border-radius: 2%;
   }
   

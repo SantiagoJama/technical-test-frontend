@@ -1,9 +1,11 @@
-<app-header [menuLinks]="[{nameLink : 'Inicio', nameRoute : 'home'},{nameLink : 'Salir', nameRoute : 'sign-in'}]"></app-header>
+<app-header [menuLinks]="[{nameLink : 'Salir', nameRoute : 'sign-in'}]"></app-header>
 <main class="container-fluid" style="height: 86.6vh;">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="text-center">Bienvenido {{ userName }} al la página principal</h2>
+                <div class="main-message-container">
+                    <h2 class="text-center message">Bienvenido {{ userName }} a la página principal</h2>
+                </div>
             </div>
         </div>
     </div>

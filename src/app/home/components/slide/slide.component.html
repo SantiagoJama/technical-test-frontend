@@ -1,13 +1,18 @@
-<section class="container-fluid" >
+<section class="container-fluid">
       <div class="main-carousel__container" style="height: 78vh;">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="background-color: rgb(123, 123, 199); width: 60%;">
+        <div id="carouselExampleIndicators" class="carousel slide sliders-container" data-ride="carousel" style=" width: 60%;">
             <ol class="carousel-indicators">
               <li *ngFor="let slide of slides; let i = index" [class.active]="i === 0" data-target="#carouselExampleIndicators" [attr.data-slide-to]="i"></li>
             </ol>
             <div class="carousel-inner carousel-content">
               <div class="carousel-item" *ngFor="let slide of slides; let i = index" [class.active]="i === 0">
-                <h1>{{ slide.title }}</h1>
-                <p>{{ slide.description }}</p>
+                <h1 class="text-center mt-2">{{ slide.title }}</h1>
+                <p class="text-center">{{ slide.description }}</p>
+                <div>
+                  <div style="width: 100%; height: 30em;">
+                    <img src="{{slide.ulrImg}}" alt="" style="width: 100%; height: 30em;">
+                  </div>
+                </div>
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

@@ -1,0 +1,11 @@
+.main-message-container{
+    margin-top: 1em;
+    padding: .5em;
+    
+    
+}
+
+    .message{
+        color:  #107BF4;
+        font-weight: 600;
+    }

@@ -5,12 +5,7 @@
             <div style="height: 86.6vh;" class="login-form__container"> 
                 <div style="width: 30%; border-left: 25px solid #107BF4;" class="form-container">
                     <h3 class="text-center sign-up-legend">Registrese en la web</h3>
-                <form (ngSubmit)="onSubmit(loginForm.value);" #loginForm="ngForm">
-                    <div class="form-group">
-                        <label for="useremail" class="label-information">Ingrese su correo electrónico:</label> <br>
-                        <input type="text" class="form-control" name="useremail" id="useremail" ngModel #useremail="ngModel" required="true">
-                        <span [hidden]="useremail.valid || useremail.pristine" class="text-danger">El usuario es requerido</span>
-                    </div>
+                <form (ngSubmit)="onSubmit(loginForm);" #loginForm="ngForm">
                     <div class="form-group">
                         <label for="username" class="label-information">Ingrese su usuario:</label> <br>
                         <input type="text" class="form-control" name="username" id="username" ngModel #username="ngModel" required="true">
@@ -29,7 +24,7 @@
                     <div class="submit-button__container form-group">
                         <div class="button-items">
                             <button type="submit" [disabled]="loginForm.invalid" class="sign-up-button"> Registrarme </button>
-                            <button type="button" class="cancel-button">Cancelar</button>
+                            <button type="button" class="cancel-button" routerLink="/sign-in">Cancelar</button>
                         </div>
                     </div>
                 </form>

@@ -17,9 +17,8 @@
                         <span [hidden]="userpass.valid || userpass.pristine" class="text-danger">La contaseña es requerida</span>
                     </div>
                     <div class="submit-button__container form-group">
-                        <div class="button-items">
+                        <div class="button-items" style="display: flex; flex-direction: row; justify-content: center;">
                             <button type="submit" [disabled]="loginForm.invalid" class="sign-in-button"> Ingresar </button>
-                            <button type="button" class="sign-up-button">Olvidé la contraseña</button>
                         </div>
                     </div>
                 </form>
